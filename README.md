@@ -1,3 +1,3 @@
 Exercice: Tableaux dynamiques
- 1.  Créez une table HTML vide.
+ 1.  Créez une table HTML vide( de trois lignes et de trois colonnes).
  2.Utilisez JavaScript pour ajouter dynamiquement des lignes et des colonnes à la table en fonction des données fournies dans un tableau.
