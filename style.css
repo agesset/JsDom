@@ -1,0 +1,19 @@
+.container{
+    width: 100%;
+    height:100vh;
+}
+
+table{
+    width: 75%;
+    height: 50%;
+    margin: auto;
+}
+
+th{
+    height: 50px;
+}
+
+table, th, td {
+    border: solid black 1px;
+    border-collapse: collapse;
+}
