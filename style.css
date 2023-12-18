@@ -5,8 +5,11 @@
 
 table{
     width: 75%;
-    height: 50%;
     margin: auto;
+}
+
+td{
+    height: 50px;
 }
 
 th{
