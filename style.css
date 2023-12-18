@@ -10,10 +10,26 @@ table{
 }
 
 th{
+    
     height: 50px;
 }
+
 
 table, th, td {
     border: solid black 1px;
     border-collapse: collapse;
+}
+
+button{
+    display: block;
+    width: 15%;
+    height: 50px;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+}
+
+button:hover{
+    transform: scale(1.1);
 }
