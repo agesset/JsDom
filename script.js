@@ -117,12 +117,6 @@ let const_data = {
 
 let table = document.querySelector(".container table");
 let button = document.querySelector(".container button");
-let tr = document.createElement("tr");
-let td1 = document.createElement("td");
-let td2 = document.createElement("td");
-let td3 = document.createElement("td");
-let td4 = document.createElement("td");
-tr.append(td1, td2, td3, td4);
 button.addEventListener("click",() => {
     let tr = document.createElement("tr");
     let td1 = document.createElement("td");
