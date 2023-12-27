@@ -116,14 +116,10 @@ let const_data = {
 };
 
 let table = document.querySelector(".container table");
-let button = document.querySelector(".container button");
-let tr = document.createElement("tr");
-let td1 = document.createElement("td");
-let td2 = document.createElement("td");
-let td3 = document.createElement("td");
-let td4 = document.createElement("td");
-tr.append(td1, td2, td3, td4);
-button.addEventListener("click",() => {
+let addButton = document.querySelector(".container .button .add");
+let remButton = document.querySelector(".container .button .rem")
+
+addButton.addEventListener("click",() => {
     let tr = document.createElement("tr");
     let td1 = document.createElement("td");
     let td2 = document.createElement("td");
@@ -131,5 +127,13 @@ button.addEventListener("click",() => {
     let td4 = document.createElement("td");
     tr.append(td1, td2, td3, td4);
     table.append(tr);
+}
+);
+
+remButton.addEventListener("click",()=>{
+    if( table.childNodes.length > 2)
+    {
+        table.removeChild(table.lastChild);
+    }
 }
 );
