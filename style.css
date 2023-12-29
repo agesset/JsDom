@@ -4,6 +4,11 @@ body{
     justify-content: center;
     flex-direction: column;
     font-family: 'MV Boli';
+    background-image: url('thstrip.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
 }
 form{
     display: flex;
@@ -11,7 +16,7 @@ form{
     justify-content: center;
     flex-direction: column;
     gap:1.5vh;
-    
+    backdrop-filter: blur(20px);
     
 }
 input{
@@ -31,6 +36,8 @@ input{
 table{
     width: 75%;
     margin: auto;
+    backdrop-filter: blur(20px);
+    
 }
 
 td, th{
@@ -42,7 +49,7 @@ td, th{
 }
 
 table, th, td {
-    border: solid black 2px;
+    border: 2px solid whitesmoke;
     border-collapse: collapse;
 }
 
@@ -62,7 +69,7 @@ table, th, td {
 #submitButton:hover{
     border: 3px inset lightblue;
     background-color: transparent;
-    color: black;
+    color: hsla(184, 57%, 45%, 0.922);
     font-weight: bold;
 }
 /* #submitButton{
