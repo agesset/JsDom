@@ -4,18 +4,36 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Document</title>
+        <title>Dynamic Table</title>
+        <script src="script.js" defer></script>
     </head>
     <body>
+        <b><button id="arrow">&darr;</button>&nbsp;Add a new line</b><br>
+        <form action="" method="post" id="form1" style="display: none;">
+            <label for="startedAt">Enter a startedAt :</label>
+            <input type="date" name="" id="startedAt" required><br>
+            <label for="endAt">Enter a endAt :</label>
+            <input type="date" name="" id="endAt" required><br>
+            <label for="totalDue">Enter a totalDue :</label>
+            <input type="number" name="" id="totalDue" min="0" required placeholder="10000"><br>
+            <input type="submit" value="Submit" id="submitButton">
+            
+        </form>
         <div class="container">
-            <button>Add</button>
+            
             <br>
             <table>
                 <tr>
-                    <th>contract_id</th>
-                    <th>startedAt</th>
-                    <th>endAt</th>
-                    <th>totalDue</th>
+                    <th>Contract Id</th>
+                    <th>Started At</th>
+                    <th>End At</th>
+                    <th>Total Due</th>
+                </tr>
+                <!-- <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -28,15 +46,10 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                </tr> -->
             </table>
+            
         </div>
-        <script src="script.js"></script>
+        
     </body>
 </html>

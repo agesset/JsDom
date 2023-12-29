@@ -3,7 +3,7 @@ let const_data = {
     "last_row": 2,
     "data": [
         {
-            "contract": {
+            "a": {
                 "id": 2,
                 "startedAt": {
                     "date": "2023-07-05 17:33:00.000000",
@@ -115,15 +115,41 @@ let const_data = {
     ]
 };
 
+let form1 = document.getElementById('form1');
+let arrow = document.getElementById('arrow');
+arrow.addEventListener('click', () =>{
+    if(form1.style.display == 'none'){
+        form1.style.display = 'flex';
+        arrow.textContent = '\u2191'
+    }
+    else{
+        form1.style.display = 'none';
+        arrow.textContent = "\u2193";
+    }
+    
+})
+
 let table = document.querySelector(".container table");
-let button = document.querySelector(".container button");
-button.addEventListener("click",() => {
+let submitButton = document.getElementById('submitButton');
+let contractId = 0;
+
+form1.addEventListener("submit",(event) => {
+    contractId +=1;
+    let startedAt = document.getElementById('startedAt');
+    let endAt = document.getElementById('endAt');
+    let totalDue = document.getElementById('totalDue');
+
     let tr = document.createElement("tr");
     let td1 = document.createElement("td");
     let td2 = document.createElement("td");
     let td3 = document.createElement("td");
     let td4 = document.createElement("td");
+    td1.textContent = contractId;
+    td2.textContent = startedAt.value;
+    td3.textContent = endAt.value;
+    td4.textContent = totalDue.value;
     tr.append(td1, td2, td3, td4);
     table.append(tr);
+    event.preventDefault();
 }
 );
