@@ -116,14 +116,23 @@ let const_data = {
 };
 
 let table = document.querySelector(".container table");
-let button = document.querySelector(".container button");
-button.addEventListener("click",() => {
+let form1 = document.getElementById("form1");
+let contrat_id = 0;
+form1.addEventListener("submit",(event) => {
+    let endedAt = document.getElementById("endAt");
+    let totalDue = document.getElementById("totalDue")
+    contrat_id ++;
     let tr = document.createElement("tr");
     let td1 = document.createElement("td");
+    td1.textContent= contrat_id
     let td2 = document.createElement("td");
+    td2.textContent= startedAt.value
     let td3 = document.createElement("td");
+    td3.textContent = endedAt.value
     let td4 = document.createElement("td");
+    td4.textContent = totalDue.value
     tr.append(td1, td2, td3, td4);
     table.append(tr);
+    event.preventDefault()
 }
 );

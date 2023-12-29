@@ -5,10 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>Document</title>
+        <script src="script.js" defer></script>
     </head>
     <body>
+        <form action="" method="post" id="form1">
+            <div>
+                <label for="">startedAt :</label>
+                <input type="date" name="" id="startedAt" required><br>
+
+            </div>
+            <div>
+                <label for="">endAt :</label>
+                <input type="date" name="" id="endAt" required><br>
+
+            </div>
+            <div>
+                <label for="">totalDue :</label>
+                <input type="number" name="" id="totalDue" min="0" required><br>
+
+            </div>
+            <input type="submit" value="Submit">
+        </form>
         <div class="container">
-            <button>Add</button>
+
             <br>
             <table>
                 <tr>
@@ -17,26 +36,8 @@
                     <th>endAt</th>
                     <th>totalDue</th>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+                
+                
         </div>
-        <script src="script.js"></script>
     </body>
 </html>
